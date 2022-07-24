@@ -46,6 +46,12 @@ html {
   background-attachment: fixed;
 }
 
+@media (max-width: 800px){
+  .contenido-banner {
+    min-height: 600px;
+  }
+}
+
 .fondo-banner {
   position: absolute;
   height: 100%;
