@@ -45,6 +45,9 @@ const Banner = () => {
                         <a href="#rsvp">RSVP</a>
                     </Navegacion>
                 </ContenidoNavegacion>
+                    <h1>Reserva la fecha</h1>
+                    <div>Acá va un contador</div>
+                    <p className="texto-banner">¡Nos vamos a casar!</p>
             </div>
         </div>
     )
