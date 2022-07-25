@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import borderImage from '../assets/images/borde-titulo.png'
+import SegundoFormulario from './SegundoFormulario'
 
 const Titulo = styled.h2`
     font-family: 'Great Vibes', cursive;
@@ -29,6 +30,8 @@ const Titulo = styled.h2`
 const ContenedorFormulario = styled.div`
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     .formulario-codigo{
         margin-top: 1rem;
@@ -71,6 +74,7 @@ const Formulario = () => {
     
     const [codigo, setCodigo] = useState('')
     const [error, setError] = useState(false)
+    const [puedeConfirmar, setPuedeConfirmar] = useState(false)
 
     const codigosValidos = ['abc123']
 
@@ -83,10 +87,11 @@ const Formulario = () => {
             }, 2500);
             return
         }
+        setPuedeConfirmar(true)
     }
 
   return (
-    <>
+    <div className='rsvp'>
         <Titulo>
             ¿Asistirás?
             <img src={borderImage} alt="borde" />
@@ -110,8 +115,14 @@ const Formulario = () => {
                     />
                 </form>
             </div>
+            { puedeConfirmar && (
+                <div className='formulario-invitados'>
+                    <SegundoFormulario />
+                </div>
+
+            ) }
         </ContenedorFormulario>
-    </>
+    </div>
   )
 }
 

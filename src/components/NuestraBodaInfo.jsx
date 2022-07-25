@@ -3,6 +3,9 @@ import styled from 'styled-components'
 const Card = styled.div`
     background-color: white;
     flex: 0 0 33.3333%;
+    box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
     @media (max-width: 768px){
         flex: 1;
     }
