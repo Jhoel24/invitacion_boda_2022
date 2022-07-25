@@ -39,7 +39,7 @@ const Titulo = styled.h2`
 const GalleryComponent = () => {
 
     return (
-        <div className='contenedor'>
+        <div className='contenedor clase-nueva'>
             <Link to="/" className='regresar'>Regresar para confirmar</Link>
             <Titulo>
                 Galería
