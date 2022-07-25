@@ -1,14 +1,12 @@
 import Banner from "./components/Banner"
 import GalleryComponent from "./components/GalleryComponent"
+import AppRouter from "./routes/AppRouter"
 
 function App() {
   
   return (
     <>
-      <Banner />
-      <div className="contenedor">
-        <GalleryComponent />
-      </div>
+      <AppRouter />
     </>
   )
 }

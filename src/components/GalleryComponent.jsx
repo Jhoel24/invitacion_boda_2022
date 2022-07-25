@@ -9,6 +9,7 @@ import imagen7 from '../assets/images/galeria-imagen7.jpeg'
 import imagen8 from '../assets/images/galeria-imagen8.jpeg'
 import imagen9 from '../assets/images/galeria-imagen9.jpeg'
 import imagen10 from '../assets/images/galeria-imagen10.jpeg'
+import { Link } from 'react-router-dom'
 
 
 const Titulo = styled.h1`
@@ -18,6 +19,9 @@ const Titulo = styled.h1`
     @media (max-width: 768px){
         font-size: 5rem;
     }
+    @media (max-width: 361px){
+        font-size: 4rem;
+    }
 `
 const Galeria = styled.div`
     
@@ -26,7 +30,8 @@ const Galeria = styled.div`
 const GalleryComponent = () => {
 
     return (
-        <div className='galeria'>
+        <div className='contenedor'>
+            {/* <Link to="/" className='regresar'>Regresar</Link> */}
             <Titulo>Galería</Titulo>
             <Galeria>
                 <div>

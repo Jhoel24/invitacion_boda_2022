@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
+import { Link } from 'react-router-dom'
 
 const ContenidoNavegacion = styled.div`
     position: absolute;
@@ -50,6 +51,7 @@ const Banner = () => {
                         <a href="#pareja">Novios</a>
                         <a href="#wedding">Boda</a>
                         <a href="#rsvp">RSVP</a>
+                        <Link to={'/galeria'}>Galería</Link>
                     </Navegacion>
                 </ContenidoNavegacion>
                     <h1>Reserva la fecha</h1>
