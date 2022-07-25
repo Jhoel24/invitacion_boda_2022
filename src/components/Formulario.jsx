@@ -39,13 +39,31 @@ const ContenedorFormulario = styled.div`
         gap: 2rem;
         margin-bottom: 2rem;
 
-        input {
-            padding: 1rem 2rem;
-            border: 3px solid var(--rosado);
-            border-radius: 5px;
-            display: block;
-            width: 100%;
+        form {
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+            input {
+                padding: 1rem 2rem;
+                border: none;
+                border-radius: 5px;
+                display: block;
+                width: 100%;
+            }
+            .submit {
+                background-color: var(--azul);
+                border: 2px solid var(--azul);
+                color: white;
+                font-weight: 800;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover {
+                    background-color: white;
+                    color: var(--azul);
+                }
+            }
         }
+
     }
 `
 
@@ -76,16 +94,21 @@ const Formulario = () => {
         <ContenedorFormulario>
             <div className='formulario-codigo'>
                 <h3>Por favor ingresa tu código</h3>
+                { error && <div className='error'>Código incorrecto</div> }
                 <form
                     onSubmit={handleSubmit}
                 >
                     <input 
                         type={'text'}
-                        placeholder='Tu código de invitado'
+                        placeholder='Tu código...'
                         onChange={(e) => setCodigo(e.target.value)}
-                    /> 
+                    />
+                    <input 
+                        type={'submit'}
+                        value={'Enviar'}
+                        className='submit'
+                    />
                 </form>
-                { error && <div>Código incorrecto</div> }
             </div>
         </ContenedorFormulario>
     </>
