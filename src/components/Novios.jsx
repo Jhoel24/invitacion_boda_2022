@@ -10,7 +10,7 @@ const Titulo = styled.h2`
     position: relative;
     white-space: none;
     @media (max-width: 768px){
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
     img {
         position: absolute;

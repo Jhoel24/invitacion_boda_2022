@@ -4,7 +4,7 @@ const Card = styled.div`
     background-color: white;
     flex: 0 0 33.3333%;
     @media (max-width: 768px){
-        flex: 1s;
+        flex: 1;
     }
 
     img {
