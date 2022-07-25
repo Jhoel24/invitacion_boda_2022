@@ -5,7 +5,7 @@ import parejaFeliz from '../assets/images/pareja-feliz.webp'
 const Titulo = styled.h2`
     font-family: 'Great Vibes', cursive;
     text-align: center;
-    margin: 2rem;
+    margin: 3rem 0;
     font-size: 7rem;
     position: relative;
     white-space: none;

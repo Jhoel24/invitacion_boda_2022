@@ -48,8 +48,8 @@ const Banner = () => {
                     <p className="logo"><span>Sophia</span>{' '} & {' '} <span>Diego</span></p>
                     <Navegacion className="navegacion">
                         <a href="#contenido-banner">Inicio</a>
-                        <a href="#pareja">Novios</a>
-                        <a href="#wedding">Boda</a>
+                        <a href="#novios">Novios</a>
+                        <a href="#boda">Boda</a>
                         <a href="#rsvp">RSVP</a>
                         <Link to={'/galeria'}>Galería</Link>
                     </Navegacion>
