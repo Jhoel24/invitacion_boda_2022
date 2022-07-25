@@ -17,7 +17,7 @@ const ContenedorTimer = styled.div`
     border: 2px solid white;
     border-radius: 10px;
     margin: 4rem 0;
-    @media (max-width: 768px){
+    @media (max-width: 800px){
        padding: .8rem 1.8rem
     }
     .time-box{

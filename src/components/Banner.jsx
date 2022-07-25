@@ -10,7 +10,7 @@ const ContenidoNavegacion = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
-    @media (max-width: 768px){
+    @media (max-width: 892px){
         flex-direction: column;
         gap: 3rem;
 
@@ -45,7 +45,7 @@ const Banner = () => {
         <div className="contenido-banner">
             <div className="fondo-banner">
                 <ContenidoNavegacion>
-                    <p className="logo"><span>Sophia</span>{''} & {''} <span>Diego</span></p>
+                    <p className="logo"><span>Sophia</span>{' '} & {' '} <span>Diego</span></p>
                     <Navegacion className="navegacion">
                         <a href="#contenido-banner">Inicio</a>
                         <a href="#pareja">Novios</a>
