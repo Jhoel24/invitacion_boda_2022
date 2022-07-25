@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import CountdownTimer from "./CountdownTimer"
 
 const ContenidoNavegacion = styled.div`
     position: absolute;
@@ -33,6 +34,9 @@ const Navegacion = styled.nav`
 `
 
 const Banner = () => {
+
+    const partyDate = new Date('January 04 2023 00:00:00').getTime()
+
     return (
         <div className="contenido-banner">
             <div className="fondo-banner">
@@ -46,7 +50,9 @@ const Banner = () => {
                     </Navegacion>
                 </ContenidoNavegacion>
                     <h1>Reserva la fecha</h1>
-                    <div>Acá va un contador</div>
+                    <CountdownTimer 
+                        countdownTimestampMs={partyDate}
+                    />
                     <p className="texto-banner">¡Nos vamos a casar!</p>
             </div>
         </div>
