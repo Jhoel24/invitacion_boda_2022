@@ -126,16 +126,17 @@ html {
 .regresar{
   text-decoration: none;
   font-size: 2.5rem;
-  color: coral;
+  color: var(--rosado);
   font-weight: 900;
-  padding: .8rem 1rem;
-  border: 1px solid coral;
+  padding: 1rem 2rem;
+  border: 1px solid var(--rosado);
   border-radius: 7px;
 }
 
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 .error {
@@ -207,5 +208,64 @@ img {
   }
   .button{
     width: 50%;
+  }
+}
+
+.gallery {
+  margin: 0 0.65rem;
+}
+
+.galery-item {
+  height: auto;
+  margin: 0.5rem;
+}
+
+.galery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 640px){
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 300px);
+    grid-auto-flow: row dense;
+  }
+
+  .galery-item {
+    margin: 0.7rem;
+  }
+
+  .galery-item:first-child {
+    grid-row: span 1;
+  }
+
+  .galery-item:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+  }
+
+  .galery-item:nth-child(6),
+  .galery-item:nth-child(8) {
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 960px){
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: repeat(3, auto-flow);
+  }
+
+  .galery-item:first-child, .galery-item:nth-child(7), .galery-item:nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .galery-item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 }
