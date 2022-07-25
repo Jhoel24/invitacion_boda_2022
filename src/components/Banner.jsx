@@ -14,6 +14,9 @@ const ContenidoNavegacion = styled.div`
         gap: 3rem;
 
     }
+    p:first-child {
+        font-family: 'Great Vibes', cursive;
+    }
 `
 
 const Navegacion = styled.nav`
@@ -41,7 +44,7 @@ const Banner = () => {
         <div className="contenido-banner">
             <div className="fondo-banner">
                 <ContenidoNavegacion>
-                    <p className="logo"><span>Sophia</span> & <span>Diego</span></p>
+                    <p className="logo"><span>Sophia</span>{''} & {''} <span>Diego</span></p>
                     <Navegacion className="navegacion">
                         <a href="#contenido-banner">Inicio</a>
                         <a href="#pareja">Novios</a>
