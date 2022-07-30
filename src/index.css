@@ -40,7 +40,7 @@ html {
 }
 
 .contenido-banner {
-  background-image: url('./assets/images/bg-1.webp');
+  background-image: url('/assets/images/imagen-banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -50,7 +50,7 @@ html {
 }
 
 /* @media (max-width: 800px){
-  .contenido-banner {
+  .contenido-banner {   
     min-height: 600px;
   }
 } */
