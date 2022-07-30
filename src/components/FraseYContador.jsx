@@ -12,7 +12,7 @@ const Titulo = styled.h2`
     color: #b99851;
     font-weight: lighter;
     @media (max-width: 768px){
-        font-size: 6rem;
+        font-size: 5.6rem;
     }
     img {
         position: absolute;
@@ -30,7 +30,7 @@ const Titulo = styled.h2`
 
 const FraseYContador = () => {
 
-    const partyDate = new Date('January 04 2023 00:00:00').getTime()
+    const partyDate = new Date('January 22 2023 00:00:00').getTime()
 
     return (
         <>
@@ -42,7 +42,7 @@ const FraseYContador = () => {
                     <CountdownTimer 
                         countdownTimestampMs={partyDate}
                     />
-                <p className="texto-banner">Nos complace que seas parte de esta nueva etapa de nuestras vidas, esperamos que nos puedan acompañar en este día tan especial.</p>
+                <p className="texto-banner">"Nos complace que seas parte de esta nueva etapa de nuestras vidas, esperamos que nos puedan acompañar en este día tan especial."</p>
             </div>
         </>
     )

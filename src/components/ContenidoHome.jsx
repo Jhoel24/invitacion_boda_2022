@@ -8,10 +8,10 @@ const ContenidoHome = () => {
     return (
         <>
         <Banner />
-        <section className="contenedor" >
+        <section className="contenedor" id="novios">
           <FraseYContador />
         </section>
-        <section className="contenedor" id="novios">
+        <section className="contenedor">
           <Novios />
         </section>
         <section className="contenedor" id="boda">

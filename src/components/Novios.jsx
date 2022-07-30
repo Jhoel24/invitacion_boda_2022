@@ -26,7 +26,7 @@ const Titulo = styled.h2`
     }
 `
 const ContenedorImagenTexto = styled.div`
-    margin: 1rem 0;
+    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,22 +40,52 @@ const ContenedorImagenTexto = styled.div`
     .imagen, .texto {
         flex: 1
     }
+
+    .texto p{
+        font-size: 3rem;
+        font-weight: 200;
+        line-height: 2;
+
+        @media (max-width:768px){
+            text-align: center;
+            font-size: 2.2rem;
+        }
+
+        span {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #b99851;
+        }
+    }
+
+    .imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen img {
+        object-fit: cover;
+        height: 500px;
+        box-shadow: 0px 2px 10px 0px;
+        @media (max-width: 768px){
+            height: 450px;
+        }
+    }
+
+
 `
 
 
 const Novios = () => {
     return (
         <>
-            <Titulo>
-                Algún texto bonito
-                    <img src={borderImage} alt="borde" />
-            </Titulo>
             <ContenedorImagenTexto>
                 <div className='imagen'>
-                    <img src={parejaFeliz} alt="Pareja feliz" />
+                    <img src='/assets/images/imagen-frase.jpg' alt="Pareja feliz" />
                 </div>
                 <div className='texto'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fugiat enim omnis rem quo suscipit, sed expedita id voluptas minima nulla in praesentium recusandae iusto! Quam voluptatibus quis consectetur dicta?</p>
+                    <p>Por eso el hombre deja a su padre y a su madre, y se une a su mujer, y los dos se funden en un solo ser.<br></br> <span>Génesis 2:24</span>  </p>
                 </div>
             </ContenedorImagenTexto>
         </>

@@ -79,10 +79,10 @@ html {
 
 @media (max-width: 768px){
   .logo{
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
   .logo span {
-    font-size: 5rem;
+    font-size: 5.2rem;
   }
 }
 
