@@ -38,8 +38,6 @@ const Navegacion = styled.nav`
     }
 `
 const Banner = () => {
-
-    const partyDate = new Date('January 04 2023 00:00:00').getTime()
    
     return (
         <div className="contenido-banner">
@@ -54,11 +52,11 @@ const Banner = () => {
                         <Link to={'/galeria'}>Galería</Link>
                     </Navegacion>
                 </ContenidoNavegacion>
-                    <h1>Reserva la fecha</h1>
+                    {/* <h1>Reserva la fecha</h1>
                     <CountdownTimer 
                         countdownTimestampMs={partyDate}
                     />
-                    <p className="texto-banner">¡Nos vamos a casar!</p>
+                    <p className="texto-banner">¡Nos vamos a casar!</p> */}
             </div>
         </div>
     )

@@ -13,12 +13,13 @@ const ContenedorTimer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    gap: 2rem;
-    border: 2px solid white;
+    gap: 10rem;
+    border: 2px solid black;
     border-radius: 10px;
     margin: 4rem 0;
     @media (max-width: 800px){
-       padding: .8rem 1.8rem
+       padding: .8rem 1.8rem;
+       gap: 3rem;
     }
     .time-box{
         display: flex;
@@ -28,7 +29,7 @@ const ContenedorTimer = styled.div`
 
         span:first-child {
             font-size: 3.5rem;
-            color: white;
+            color: black;
             @media (max-width: 768px){
                 font-size: 1.8rem;
             }
@@ -38,8 +39,11 @@ const ContenedorTimer = styled.div`
         }
         span:last-child {
             font-size: 3rem;
-            color: white;
-            font-weight: 700;
+            color: black;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 1rem;
             @media (max-width: 768px){
                 font-size: 2rem;
             }

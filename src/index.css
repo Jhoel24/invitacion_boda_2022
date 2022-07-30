@@ -69,12 +69,12 @@ html {
 
 .logo {
   font-size: 3.5rem;
-  color: white;
 }
 
 .logo span {
   font-size: 7rem;
-  font-weight: 800;
+  /* font-weight: 800; */
+  font-weight: lighter;
 }
 
 @media (max-width: 768px){
@@ -104,9 +104,12 @@ html {
 }
 
 .texto-banner {
-  font-size: 3rem;
-  font-weight: 800;
-  color: white;
+  font-size: 5rem;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 800px){
@@ -114,7 +117,7 @@ html {
   font-size: 3.5rem;
 }
 .texto-banner {
-  font-size: 2.2rem;
+  font-size: 3.5rem;
 }
 }
 
@@ -274,4 +277,11 @@ img {
     grid-column: span 2;
     grid-row: span 2;
   }
+}
+
+.contenido-tiempo-frase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
