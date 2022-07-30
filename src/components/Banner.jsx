@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import { Link } from 'react-router-dom'
+import ScrollDown from "./ScrollDown"
 
 const ContenidoNavegacion = styled.div`
     position: absolute;
@@ -57,6 +58,7 @@ const Banner = () => {
                         countdownTimestampMs={partyDate}
                     />
                     <p className="texto-banner">¡Nos vamos a casar!</p> */}
+                <ScrollDown />
             </div>
         </div>
     )
