@@ -33,7 +33,7 @@ const Navegacion = styled.nav`
         cursor: pointer;
         font-size: 2rem;  
         @media (max-width: 768px){
-            font-size: 1.2rem;
+            font-size: 1.6rem;
         }
     }
 `

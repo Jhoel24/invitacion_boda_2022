@@ -17,9 +17,10 @@ const ContenedorTimer = styled.div`
     border: 2px solid black;
     border-radius: 10px;
     margin: 4rem 0;
+    width: 100%;
     @media (max-width: 800px){
-       padding: .8rem 1.8rem;
-       gap: 3rem;
+       padding: .8rem 1.3rem;
+       gap: 1rem;
     }
     .time-box{
         display: flex;
@@ -44,11 +45,11 @@ const ContenedorTimer = styled.div`
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-top: 1rem;
-            @media (max-width: 768px){
-                font-size: 2rem;
+            @media (max-width: 884px){
+                font-size: 1.6rem;
             }
             @media (max-width: 385px){
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
