@@ -2,6 +2,10 @@ import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import { Link } from 'react-router-dom'
 
+
+import { useEffect } from "react"
+
+
 const ContenidoNavegacion = styled.div`
     position: absolute;
     top: 1rem;
@@ -17,6 +21,7 @@ const ContenidoNavegacion = styled.div`
     }
     p:first-child {
         font-family: 'Great Vibes', cursive;
+        color: #b99851
     }
 `
 
@@ -36,11 +41,10 @@ const Navegacion = styled.nav`
         }
     }
 `
-
 const Banner = () => {
 
     const partyDate = new Date('January 04 2023 00:00:00').getTime()
-
+   
     return (
         <div className="contenido-banner">
             <div className="fondo-banner">
