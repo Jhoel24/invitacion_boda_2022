@@ -14,7 +14,7 @@ const ContenedorTimer = styled.div`
     justify-content: space-between;
     padding: 1rem 2rem;
     gap: 10rem;
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 10px;
     margin: 4rem 0;
     width: 100%;
@@ -31,6 +31,7 @@ const ContenedorTimer = styled.div`
         span:first-child {
             font-size: 3.5rem;
             color: black;
+            font-family: 'Oswald', sans-serif;
             @media (max-width: 768px){
                 font-size: 1.8rem;
             }
@@ -41,7 +42,7 @@ const ContenedorTimer = styled.div`
         span:last-child {
             font-size: 3rem;
             color: black;
-            font-weight: 100;
+            font-weight: 200;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-top: 1rem;
