@@ -2,10 +2,6 @@ import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import { Link } from 'react-router-dom'
 
-
-import { useEffect } from "react"
-
-
 const ContenidoNavegacion = styled.div`
     position: absolute;
     top: 1rem;
