@@ -49,11 +49,11 @@ html {
   background-attachment: fixed;
 }
 
-@media (max-width: 800px){
+/* @media (max-width: 800px){
   .contenido-banner {
     min-height: 600px;
   }
-}
+} */
 
 .fondo-banner {
   position: absolute;
@@ -131,6 +131,12 @@ html {
   padding: 1rem 2rem;
   border: 1px solid var(--rosado);
   border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+  .regresar{
+    font-size: 1.5rem;
+  }
 }
 
 img {
