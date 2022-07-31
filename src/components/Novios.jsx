@@ -87,6 +87,7 @@ const Novios = () => {
                 <div className='texto'>
                     <p>Por eso el hombre deja a su padre y a su madre, y se une a su mujer, y los dos se funden en un solo ser.<br></br> <span>Génesis 2:24</span>  </p>
                 </div>
+                <a href='https://www.waze.com/en/live-map/directions/finca-san-nicolas-av.-genova-urb.-cumbres-de-san-francisco,-san-salvador?place=w.177471625.1774585175.21894723'>Waze</a>
             </ContenedorImagenTexto>
         </>
     )
