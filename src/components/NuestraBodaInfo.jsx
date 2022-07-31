@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-const Card = styled.div`
+const Card = styled.div`    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     flex: 0 0 33.3333%;
     box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
@@ -19,6 +23,12 @@ const Card = styled.div`
 
     .contenido-texto {
         padding: 3rem;
+        text-align: center;
+
+        p {
+            font-size: 2rem;
+        }
+
         h3 {
             text-align: left;
             margin-bottom: 1rem;
@@ -44,7 +54,9 @@ const NuestraBodaInfo = ({info}) => {
 
     return (
         <Card>
-            <img src={info.imagen} />
+            <div className='centrar-imagen'>
+                <img src={info.imagen} />
+            </div>
             <div className="contenido-texto">
                 <h3>{info.titulo}</h3>
                 <p>{info.parrafo}</p>

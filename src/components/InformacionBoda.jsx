@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 import borderImage from '../assets/images/borde-titulo.png'
 import NuestraBodaInfo from './NuestraBodaInfo'
-import recepcion from '../assets/images/recepcion.jpeg'
-import ceremonia from '../assets/images/ceremonia.jpeg'
-import fiesta from '../assets/images/fiesta.jpeg'
 
 const Titulo = styled.h2`
     font-family: 'Great Vibes', cursive;
@@ -41,6 +38,10 @@ const ContenedorCardInfo = styled.div`
     }
 `
 const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     flex: 0 0 33.3333%;
     box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
@@ -53,6 +54,7 @@ const Card = styled.div`
     img {
         height: auto;
         width: auto;
+        
         @media (max-width: 768px){
         }
     }
@@ -97,6 +99,9 @@ const Card = styled.div`
             }
         }
 
+        p {
+            font-size: 2rem;
+        }
         
         h3 {
             text-align: left;
@@ -122,8 +127,8 @@ const Card = styled.div`
 const InformacionBoda = () => {
 
     const arrayInfo = [
-        { titulo: 'Código de vestimenta', parrafo: '- Formal', imagen: recepcion },
-        { titulo: 'Regalos', parrafo: 'Alguna dirección y algún párrafo de relleno', imagen: fiesta },
+        { titulo: 'Código de vestimenta', parrafo: '- Formal', imagen: '/assets/images/traje.png' },
+        { titulo: 'Regalos', parrafo: 'Agradeceremos sus muestras de cariño en regalo de sobre', imagen: '/assets/images/regalo.png' },
     ]
 
     return (
@@ -140,7 +145,9 @@ const InformacionBoda = () => {
                     />
                 )) }
                 <Card>
-                    <img src={ceremonia} />
+                    <div className='centrar-imagen'>
+                        <img src={'/assets/images/fiesta.png'} alt="ceremonia"/>
+                    </div>
                     <div className='contenido-texto'>
                         <h3>Ceremonia y recepción</h3>
                         <p>22 de enero, 2023</p>
