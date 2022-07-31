@@ -4,12 +4,14 @@ import borderImage from '../assets/images/borde-titulo.png'
 import SegundoFormulario from './SegundoFormulario'
 
 const Titulo = styled.h2`
-    font-family: 'Great Vibes', cursive;
+    /* font-family: 'Great Vibes', cursive; */
     text-align: center;
     margin: 3rem 0;
     font-size: 7rem;
     position: relative;
     white-space: none;
+    text-transform: uppercase;
+    font-weight: 900;
     @media (max-width: 768px){
         font-size: 4.5rem;
     }
@@ -93,8 +95,7 @@ const Formulario = () => {
   return (
     <div className='rsvp'>
         <Titulo>
-            ¿Asistirás?
-            <img src={borderImage} alt="borde" />
+            Por favor confirma tu asistencia acá
         </Titulo>
         <ContenedorFormulario>
             <div className='formulario-codigo'>

@@ -382,3 +382,9 @@ img {
   align-items: center;
   margin-top: 2.5rem;
 }
+
+.contenedor-colochos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

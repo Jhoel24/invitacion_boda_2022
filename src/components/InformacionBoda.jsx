@@ -161,6 +161,9 @@ const InformacionBoda = () => {
                     </div>
                 </Card>
             </ContenedorCardInfo>
+            <div className='contenedor-colochos'>
+                <img src="/assets/images/colochos.png" alt="Colochos dorados" />
+            </div>
         </>
     )
 }
