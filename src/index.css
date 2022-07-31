@@ -56,6 +56,33 @@ html {
   }
 } */
 
+.imagen-formulario {
+  background-image: url('/assets/images/fondo-formulario.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  position: relative;
+  background-position: center 30%;
+}
+
+@media (min-width: 768px) {
+   .imagen-formulario {
+      min-height: 800px;
+   }
+}
+
+.fondo-formulario {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .fondo-banner {
   position: absolute;
   height: 100%;

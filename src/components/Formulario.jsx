@@ -11,9 +11,10 @@ const Titulo = styled.h2`
     position: relative;
     white-space: none;
     text-transform: uppercase;
+    color: white;
     font-weight: 900;
     @media (max-width: 768px){
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     img {
         position: absolute;
@@ -43,6 +44,10 @@ const ContenedorFormulario = styled.div`
         align-items: center;
         gap: 2rem;
         margin-bottom: 2rem;
+
+        h3 {
+            color: #fff;
+        }
 
         form {
             display: flex;

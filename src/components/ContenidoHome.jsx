@@ -17,9 +17,13 @@ const ContenidoHome = () => {
         <section className="contenedor" id="boda">
           <InformacionBoda />
         </section>
-        <section className="contenedor" id="rsvp">
-          <Formulario />
-        </section>
+        <div className="imagen-formulario">
+          <div className="fondo-formulario">
+            <section className="contenedor" id="rsvp">
+              <Formulario />
+            </section>
+          </div>
+        </div>
       </>
     )
 }
