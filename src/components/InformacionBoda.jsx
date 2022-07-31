@@ -85,6 +85,7 @@ const Card = styled.div`
                 background-color: var(--azul);
                 color: #fff;
                 border-radius: 10px;
+                font-weight: 700;
                 cursor: pointer;
                 border: 2px solid var(--azul);
                 transition: all .2s ease-in-out;
@@ -102,6 +103,7 @@ const Card = styled.div`
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 3px;
+            font-size: 2.8rem;
 
             &:after{
                 content: '';

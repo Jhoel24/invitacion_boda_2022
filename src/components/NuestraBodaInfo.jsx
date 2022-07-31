@@ -24,6 +24,7 @@ const Card = styled.div`
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 3px;
+            font-size: 2.8rem;
 
             &:after{
                 content: '';
