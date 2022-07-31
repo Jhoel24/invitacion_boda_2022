@@ -370,3 +370,8 @@ img {
       opacity: 1;
   }
 }
+
+.texto-importante {
+  font-weight: 700;
+  text-transform: uppercase;
+}
