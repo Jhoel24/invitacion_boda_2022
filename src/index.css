@@ -47,7 +47,7 @@ html {
   min-height: 100vh;
   position: relative;
   background-position: center center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   -webkit-background-size: cover;
 }
 
