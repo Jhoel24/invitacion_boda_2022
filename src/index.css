@@ -422,3 +422,10 @@ img {
   color: gray;
   font-size: 1.8rem;
 }
+
+.input-select {
+  padding: .8rem 1rem;
+  text-align: center;
+  color: gray;
+  font-size: 1.8rem;
+}

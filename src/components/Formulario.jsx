@@ -104,6 +104,8 @@ const Formulario = () => {
        }
     }
 
+    console.log('Me renderizo');
+
   return (
     <div className='rsvp'>
         <Titulo>

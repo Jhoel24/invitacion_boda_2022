@@ -2,6 +2,8 @@ import Select from 'react-select'
 import styled from 'styled-components'
 import { generateOptions } from '../helpers/createSelect'
 import { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const FormularioContainer = styled.div`
     margin-top: -1rem;
@@ -33,17 +35,40 @@ const SegundoFormulario = ({familia}) => {
 
     const [invitados, setInvitados] = useState('')
     const [eleccion, setEleccion] = useState('')
-    
+    const [error, setError] = useState(false)
+
+    const navigate = useNavigate()
     
     const handleSubmit = async e => {
         e.preventDefault()
-        console.log({invitados, eleccion});
+        if([invitados, eleccion].includes('')){
+            setError(true)
+            setTimeout(() => {
+                setError(false)
+            }, 2500);
+        }
+        try {
+            const url = 'https://arcane-inlet-95336.herokuapp.com/api/familia'
+            await axios.put(url, { 
+                invitados: Number(invitados),
+                codigo: familia.codigo
+             })
+             console.log('Todo en orden');
+             setTimeout(() => {
+                 navigate('/galeria')
+             }, 1500);
+        } catch (error) {
+            console.log(error);
+        }
     }
+
+    console.log('Me renderizo');
 
     return (
         <>
             <FormularioContainer className="formulario-container">  
             <h2>Bienvenido/a: <span>{familia.nombre}</span></h2>
+            { error && <div className='error'>No puedes enviar el formulario vacío</div> }
             <form className="formulario" onSubmit={handleSubmit}>
                 { typeof generateOptions(familia.invitados) === 'string' ? (
                     <input 
@@ -65,8 +90,10 @@ const SegundoFormulario = ({familia}) => {
                     /> */}
                     <select
                         value={invitados}
-                        onChange={e = setInvitados(e.target.value)}
+                        onChange={e => setInvitados(e.target.value)}
+                        className='input-select'
                     >
+                        <option value={""}>-- Número de invitados --</option>
                         { generateOptions(familia.invitados).map((opcion, i) => (
                             <option
                                 key={i}
@@ -86,7 +113,9 @@ const SegundoFormulario = ({familia}) => {
                 <select
                     value={eleccion}
                     onChange={e => setEleccion(e.target.value)}
+                    className='input-select'
                 >
+                    <option value={""}>-- Asistiré a --</option>
                     {options2.map((opcion,i) => (
                         <option
                             key={i}
