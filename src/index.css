@@ -75,7 +75,7 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,18 +155,27 @@ html {
 
 
 .regresar{
+  position: relative;
+  top: 1.5rem;
+  padding: 1rem;
   text-decoration: none;
-  font-size: 2.5rem;
-  color: var(--rosado);
-  font-weight: 900;
-  padding: 1rem 2rem;
-  border: 1px solid var(--rosado);
-  border-radius: 7px;
+  border: 1px solid goldenrod;
+  color: goldenrod;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  transition: all .3s ease;
+}
+
+.regresar:hover {
+  background-color: goldenrod;
+  color: white;
+  border: 1px solid goldenrod;
 }
 
 @media (max-width: 768px) {
   .regresar{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -285,7 +294,9 @@ img {
   }
 
   .galery-item:nth-child(6),
-  .galery-item:nth-child(8) {
+  .galery-item:nth-child(8),  
+  .galery-item:nth-child(12)  
+  {
     grid-row: span 2;
   }
 }
@@ -296,7 +307,7 @@ img {
     grid-auto-rows: repeat(3, auto-flow);
   }
 
-  .galery-item:first-child, .galery-item:nth-child(7), .galery-item:nth-child(8) {
+  .galery-item:first-child, .galery-item:nth-child(7), .galery-item:nth-child(8), .galery-item:nth-child(13) {
     grid-column: span 2;
     grid-row: span 1;
   }

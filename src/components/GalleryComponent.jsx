@@ -40,41 +40,61 @@ const GalleryComponent = () => {
 
     return (
         <div className='contenedor clase-nueva'>
-            <Link to="/" className='regresar'>Regresar para confirmar</Link>
+            <Link to="/" className='regresar'>
+            Regresar
+            </Link>
             <Titulo>
                 Galería
                 <img src={borderImage} alt="" />
             </Titulo>
             <div className='gallery'>
                 <div className='galery-item'>
-                    <img src={imagen1} alt="Imagen 1" />
+                    <img src='/assets/images/galeria1.jpg' alt="Imagen 1" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen2} alt="Imagen 2" />
+                    <img src='/assets/images/galeria2.jpg' alt="Imagen 2" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen3} alt="Imagen 3" />
+                    <img src='/assets/images/galeria3.jpg' alt="Imagen 3" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen4} alt="Imagen 4" />
+                    <img src='/assets/images/galeria4.jpg' alt="Imagen 4" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen5} alt="Imagen 5" />
+                    <img src='/assets/images/galeria5.jpg' alt="Imagen 5" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen6} alt="Imagen 6" />
+                    <img src='/assets/images/galeria6.jpg' alt="Imagen 6" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen7} alt="Imagen 7" />
+                    <img src='/assets/images/galeria7.jpg' alt="Imagen 7" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen8} alt="Imagen 8" />
+                    <img src='/assets/images/galeria8.jpg' alt="Imagen 8" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen9} alt="Imagen 9" />
+                    <img src='/assets/images/galeria9.jpg' alt="Imagen 9" />
                 </div>
                 <div className='galery-item'>
-                    <img src={imagen10} alt="Imagen 10" />
+                    <img src='/assets/images/galeria10.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images/galeria11.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images/galeria12.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images/galeria13.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images/galeria14.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images/galeria15.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images/galeria16.jpg' alt="Imagen 10" />
                 </div>
             </div>
         </div>

@@ -46,8 +46,21 @@ const ContenedorFormulario = styled.div`
         gap: 2rem;
         margin-bottom: 2rem;
 
+        p {
+            font-size: 3rem;
+            font-weight: 600;
+            color: white;
+            @media (max-width: 768px){
+                font-size: 2rem;
+            }
+        }
+
         h3 {
             color: #fff;
+            font-size: 4rem;
+            @media (max-width: 768px){
+                font-size: 3.3rem;
+            }
         }
 
         form {
@@ -114,6 +127,7 @@ const Formulario = () => {
         <ContenedorFormulario>
             <div className='formulario-codigo'>
                 <h3>Por favor ingresa tu código</h3>
+                <p>Agradeceremos confirmes tu asistencia lo antes posible o hasta el 15 de noviembre</p>
                 { msgError && <div className='error'>{msgError}</div> }
                 <form
                     onSubmit={handleSubmit}
