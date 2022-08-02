@@ -60,7 +60,7 @@ html {
   background-image: url('/assets/images/fondo-formulario.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 700px;
   position: relative;
   background-position: center 30%;
 }
