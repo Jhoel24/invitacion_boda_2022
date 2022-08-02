@@ -46,6 +46,7 @@ const SegundoFormulario = ({familia}) => {
             setTimeout(() => {
                 setError(false)
             }, 2500);
+            return
         }
         try {
             const url = 'https://arcane-inlet-95336.herokuapp.com/api/familia'

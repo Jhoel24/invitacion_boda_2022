@@ -108,7 +108,6 @@ const Formulario = () => {
            setFamilia(data)
            setCodigo('')
        } catch (error) {
-           console.log(error.response.data.error);
            setMsgError(error.response.data.error)
            setTimeout(() => {
                 setMsgError('')
