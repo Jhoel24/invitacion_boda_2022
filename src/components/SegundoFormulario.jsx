@@ -4,6 +4,7 @@ import { generateOptions } from '../helpers/createSelect'
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Spinner from './Spinner'
 
 const FormularioContainer = styled.div`
     margin-top: -1rem;
@@ -36,6 +37,7 @@ const SegundoFormulario = ({familia}) => {
     const [invitados, setInvitados] = useState('')
     const [eleccion, setEleccion] = useState('')
     const [error, setError] = useState(false)
+    const [cargando, setCargando] = useState(false)
 
     const navigate = useNavigate()
     
@@ -49,13 +51,14 @@ const SegundoFormulario = ({familia}) => {
             return
         }
         try {
+            setCargando(true)
             const url = 'https://arcane-inlet-95336.herokuapp.com/api/familia'
             await axios.put(url, { 
                 invitados: Number(invitados),
                 codigo: familia.codigo
              })
-             console.log('Todo en orden');
              setTimeout(() => {
+                 setCargando(false)
                  navigate('/galeria')
              }, 1500);
         } catch (error) {
@@ -131,6 +134,7 @@ const SegundoFormulario = ({familia}) => {
                         >Confirmar
                     </button>
                 </div>
+                <Spinner />
             </form>
         </FormularioContainer>
         </>
