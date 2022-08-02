@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import borderImage from '../assets/images/borde-titulo.png'
 import SegundoFormulario from './SegundoFormulario'
+import axios from 'axios'
+import Spinner from './Spinner'
 
 const Titulo = styled.h2`
     /* font-family: 'Great Vibes', cursive; */
     text-align: center;
-    margin: 3rem 0;
+    margin: 0;
     font-size: 7rem;
     position: relative;
     white-space: none;
@@ -80,21 +81,27 @@ const ContenedorFormulario = styled.div`
 const Formulario = () => {
     
     const [codigo, setCodigo] = useState('')
-    const [error, setError] = useState(false)
-    const [puedeConfirmar, setPuedeConfirmar] = useState(false)
+    const [familia, setFamilia] = useState({})
+    const [msgError, setMsgError] = useState('')
+    const [cargando, setCargando] = useState(false)
 
-    const codigosValidos = ['abc123']
-
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault()
-        if(!codigosValidos.includes(codigo)){
-            setError(true)
-            setTimeout(() => {
-                setError(false)
-            }, 2500);
-            return
-        }
-        setPuedeConfirmar(true)
+       try {
+           setCargando(true)
+           const url = 'https://arcane-inlet-95336.herokuapp.com/api/familia/buscar'
+           const { data } = await axios.post(url, { codigo })
+           setCargando(false)
+           setFamilia(data)
+           setCodigo('')
+       } catch (error) {
+           console.log(error.response.data.error);
+           setMsgError(error.response.data.error)
+           setTimeout(() => {
+                setMsgError('')
+           }, 2000)
+           setCargando(false)
+       }
     }
 
   return (
@@ -105,7 +112,7 @@ const Formulario = () => {
         <ContenedorFormulario>
             <div className='formulario-codigo'>
                 <h3>Por favor ingresa tu código</h3>
-                { error && <div className='error'>Código incorrecto</div> }
+                { msgError && <div className='error'>{msgError}</div> }
                 <form
                     onSubmit={handleSubmit}
                 >
@@ -121,9 +128,12 @@ const Formulario = () => {
                     />
                 </form>
             </div>
-            { puedeConfirmar && (
+            { cargando && <Spinner /> }
+            { familia?.nombre && (
                 <div className='formulario-invitados'>
-                    <SegundoFormulario />
+                    <SegundoFormulario 
+                        familia={familia}
+                    />
                 </div>
 
             ) }

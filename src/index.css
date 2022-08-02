@@ -415,3 +415,10 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.input-invitados {
+  padding: .8rem 1rem;
+  text-align: center;
+  color: gray;
+  font-size: 1.8rem;
+}
