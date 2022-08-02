@@ -48,6 +48,7 @@ html {
   position: relative;
   background-position: center center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
 }
 
 /* @media (max-width: 800px){
