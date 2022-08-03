@@ -5,29 +5,19 @@ import axios from 'axios'
 import Spinner from './Spinner'
 
 const Titulo = styled.h2`
-    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Playfair Display', serif;
     text-align: center;
     margin: 0;
-    font-size: 7rem;
+    font-size: 5.4rem;
     position: relative;
     white-space: none;
     text-transform: uppercase;
     color: white;
     font-weight: 900;
     @media (max-width: 768px){
-        font-size: 3rem;
-    }
-    img {
+        font-size: 2.5rem;
         position: absolute;
-        width: 200px;
-        height: 40px;
-        bottom: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        @media (max-width: 768px){
-            width: 130px;
-            height: 25px;
-        }
+        top: 6.5rem;
     }
 `
 
