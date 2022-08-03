@@ -45,6 +45,8 @@ const ContenedorFormulario = styled.div`
         align-items: center;
         gap: 2rem;
         margin-bottom: 2rem;
+        font-family: 'Playfair Display', serif;
+        position: relative;
 
         p {
             font-size: 3rem;
@@ -52,6 +54,8 @@ const ContenedorFormulario = styled.div`
             color: white;
             @media (max-width: 768px){
                 font-size: 2rem;
+                position: absolute;
+                top: 20rem;
             }
         }
 
@@ -121,12 +125,11 @@ const Formulario = () => {
   return (
     <div className='rsvp'>
         <Titulo>
-            Por favor confirma tu asistencia acá
+            Por favor confirma tu asistencia ingresando tu código
         </Titulo>
         <ContenedorFormulario>
             <div className='formulario-codigo'>
-                <h3>Por favor ingresa tu código</h3>
-                <p>Agradeceremos confirmes tu asistencia lo antes posible o hasta el 15 de noviembre</p>
+                { !familia?.nombre && <p className='confirma-asistencia'>Agradeceremos confirmes tu asistencia lo antes posible o hasta el 15 de noviembre</p> }
                 { msgError && <div className='error'>{msgError}</div> }
                 <form
                     onSubmit={handleSubmit}

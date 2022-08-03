@@ -30,7 +30,7 @@ const Card = styled.div`
         }
 
         h3 {
-            text-align: left;
+            text-align: center;
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -42,6 +42,7 @@ const Card = styled.div`
                 margin-top: .5rem;
                 width: 50%;
                 height: 2px;
+                transform: translateX(50%);
                 background-color: var(--rosado);
                 text-align: center;
             }
