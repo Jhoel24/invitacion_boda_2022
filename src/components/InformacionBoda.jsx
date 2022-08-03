@@ -16,8 +16,8 @@ const Titulo = styled.h2`
     }
     img {
         position: absolute;
-        width: 200px;
-        height: 40px;
+        width: 300px;
+        height: 70px;
         bottom: -2rem;
         left: 50%;
         transform: translateX(-50%);
@@ -29,12 +29,15 @@ const Titulo = styled.h2`
 `
 const ContenedorCardInfo = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     @media (max-width: 768px){
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    div:nth-child(2) {
+        flex: 0 0 30%;
     }
 `
 const Card = styled.div`
@@ -43,12 +46,12 @@ const Card = styled.div`
     justify-content: center;
     align-items: center;
     background-color: white;
-    flex: 0 0 33.3333%;
+    flex: 1;
     box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
     -webkit-box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
     -moz-box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.1);
     @media (max-width: 768px){
-        flex: 1;
+        flex: 0 0 1;
     }
 
     img {
@@ -155,12 +158,21 @@ const InformacionBoda = () => {
                             </div>
                         </div>
                     </Card>
-                { arrayInfo.map((info, i) => (
+                    <Card>
+                        <div className='centrar-imagen'>
+                            <img src={arrayInfo[0].imagen} />
+                        </div>
+                        <div className="contenido-texto">
+                            <h3>{arrayInfo[0].titulo}</h3>
+                            <p>{arrayInfo[0].parrafo}</p>
+                        </div>
+                    </Card>
+                {/* { arrayInfo.map((info, i) => (
                     <NuestraBodaInfo 
                         key={i}
                         info={info}
                     />
-                )) }
+                )) } */}
             </ContenedorCardInfo>
             <div className='contenedor-colochos'>
                 <img src="/assets/images/colochos.png" alt="Colochos dorados" />

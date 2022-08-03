@@ -38,6 +38,7 @@ const Navegacion = styled.nav`
         }
     }
 `
+
 const Banner = () => {
    
     return (

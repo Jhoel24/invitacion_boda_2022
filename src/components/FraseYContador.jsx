@@ -16,8 +16,8 @@ const Titulo = styled.h2`
     }
     img {
         position: absolute;
-        width: 200px;
-        height: 60px;
+        width: 300px;
+        height: 70px;
         bottom: -2rem;
         left: 50%;
         transform: translateX(-50%);

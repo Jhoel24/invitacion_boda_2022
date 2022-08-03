@@ -96,6 +96,72 @@ const GalleryComponent = () => {
                 <div className='galery-item'>
                     <img src='/assets/images/galeria16.jpg' alt="Imagen 10" />
                 </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria1.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria2.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria3.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria4.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria5.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria6.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria7.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria8.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria9.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria10.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria11.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria12.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria13.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria14.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria15.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria16.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria17.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria18.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria19.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria20.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria21.jpg' alt="Imagen 10" />
+                </div>
+                <div className='galery-item'>
+                    <img src='/assets/images2/galeria22.jpg' alt="Imagen 10" />
+                </div>
             </div>
         </div>
     )

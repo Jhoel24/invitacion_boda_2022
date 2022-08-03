@@ -10,7 +10,8 @@ const Titulo = styled.h2`
     margin: 0;
     font-size: 5.4rem;
     position: relative;
-    white-space: none;
+    /* white-space: none; */
+    /* display: inline; */
     text-transform: uppercase;
     color: white;
     font-weight: 900;
