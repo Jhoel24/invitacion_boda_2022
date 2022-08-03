@@ -17,13 +17,13 @@ const Titulo = styled.h2`
     img {
         position: absolute;
         width: 200px;
-        height: 40px;
-        bottom: -1rem;
+        height: 60px;
+        bottom: -2rem;
         left: 50%;
         transform: translateX(-50%);
         @media (max-width: 768px){
             width: 130px;
-            height: 25px;
+            height: 45px;
         }
     }
 `
@@ -36,7 +36,7 @@ const FraseYContador = () => {
         <>
             <Titulo>
                 Sophia & Diego
-                <img src={borderImage} alt="borde" />
+                <img src={'assets/images/colochos.png'} alt="borde" />
             </Titulo>
             <div className='contenido-tiempo-frase'>
                     <CountdownTimer 

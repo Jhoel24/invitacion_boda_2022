@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --azul: #3b82f6;
@@ -14,7 +15,7 @@
 
 body {
   font-size: 1.6rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', serif;
   background-color: var(--gris-claro);
 }
 html {

@@ -18,12 +18,12 @@ const Titulo = styled.h2`
         position: absolute;
         width: 200px;
         height: 40px;
-        bottom: -1rem;
+        bottom: -2rem;
         left: 50%;
         transform: translateX(-50%);
         @media (max-width: 768px){
             width: 130px;
-            height: 25px;
+            height: 45px;
         }
     }
 `
@@ -135,31 +135,31 @@ const InformacionBoda = () => {
         <>
             <Titulo>
                 Nuestra boda
-                <img src={borderImage} alt="borde" />
+                <img src={'assets/images/colochos.png'} alt="borde" />
             </Titulo>
             <ContenedorCardInfo>
+                    <Card>
+                        <div className='centrar-imagen'>
+                            <img src={'/assets/images/fiesta.png'} alt="ceremonia"/>
+                        </div>
+                        <div className='contenido-texto'>
+                            <h3>Ceremonia y recepción</h3>
+                            <p>22 de enero, 2023</p>
+                            <p>4:30 pm</p>
+                            <p className='texto-importante'>Finca San Nicolás</p>
+                            <div className='contenido-direccion'>
+                                <div className='imagen-waze'>
+                                </div>
+                                <a href='https://www.waze.com/en/live-map/directions/finca-san-nicolas-av.-genova-urb.-cumbres-de-san-francisco,-san-salvador?place=w.177471625.1774585175.21894723'>Ir a</a>
+                            </div>
+                        </div>
+                    </Card>
                 { arrayInfo.map((info, i) => (
                     <NuestraBodaInfo 
                         key={i}
                         info={info}
                     />
                 )) }
-                <Card>
-                    <div className='centrar-imagen'>
-                        <img src={'/assets/images/fiesta.png'} alt="ceremonia"/>
-                    </div>
-                    <div className='contenido-texto'>
-                        <h3>Ceremonia y recepción</h3>
-                        <p>22 de enero, 2023</p>
-                        <p>4:30 pm</p>
-                        <p className='texto-importante'>Finca San Nicolás</p>
-                        <div className='contenido-direccion'>
-                            <div className='imagen-waze'>
-                            </div>
-                            <a href='https://www.waze.com/en/live-map/directions/finca-san-nicolas-av.-genova-urb.-cumbres-de-san-francisco,-san-salvador?place=w.177471625.1774585175.21894723'>Ir a</a>
-                        </div>
-                    </div>
-                </Card>
             </ContenedorCardInfo>
             <div className='contenedor-colochos'>
                 <img src="/assets/images/colochos.png" alt="Colochos dorados" />

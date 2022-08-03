@@ -26,7 +26,7 @@ const Titulo = styled.h2`
         position: absolute;
         width: 200px;
         height: 40px;
-        bottom: -1rem;
+        bottom: -1.3rem;
         left: 50%;
         transform: translateX(-50%);
         @media (max-width: 768px){
@@ -45,7 +45,7 @@ const GalleryComponent = () => {
             </Link>
             <Titulo>
                 Galería
-                <img src={borderImage} alt="" />
+                <img src={'assets/images/colochos.png'} alt="" />
             </Titulo>
             <div className='gallery'>
                 <div className='galery-item'>

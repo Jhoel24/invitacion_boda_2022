@@ -18,7 +18,7 @@ const ContenidoNavegacion = styled.div`
     }
     p:first-child {
         font-family: 'Great Vibes', cursive;
-        color: #b99851
+        color: #fff
     }
 `
 
@@ -49,7 +49,6 @@ const Banner = () => {
                         <a href="#contenido-banner">Inicio</a>
                         <a href="#novios">Novios</a>
                         <a href="#boda">Boda</a>
-                        <a href="#rsvp">RSVP</a>
                         <Link to={'/galeria'}>Galería</Link>
                     </Navegacion>
                 </ContenidoNavegacion>

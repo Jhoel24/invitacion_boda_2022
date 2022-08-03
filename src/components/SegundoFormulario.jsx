@@ -134,7 +134,7 @@ const SegundoFormulario = ({familia}) => {
                         >Confirmar
                     </button>
                 </div>
-                <Spinner />
+                { cargando && <Spinner />}
             </form>
         </FormularioContainer>
         </>

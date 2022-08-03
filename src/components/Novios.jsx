@@ -1,30 +1,5 @@
 import styled from 'styled-components'
-import borderImage from '../assets/images/borde-titulo.png'
-import parejaFeliz from '../assets/images/pareja-feliz.webp'
 
-const Titulo = styled.h2`
-    font-family: 'Great Vibes', cursive;
-    text-align: center;
-    margin: 3rem 0;
-    font-size: 7rem;
-    position: relative;
-    white-space: none;
-    @media (max-width: 768px){
-        font-size: 4.5rem;
-    }
-    img {
-        position: absolute;
-        width: 200px;
-        height: 40px;
-        bottom: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        @media (max-width: 768px){
-            width: 130px;
-            height: 25px;
-        }
-    }
-`
 const ContenedorImagenTexto = styled.div`
     margin: 2rem 0;
     display: flex;
