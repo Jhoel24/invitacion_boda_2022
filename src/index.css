@@ -511,3 +511,35 @@ img {
     height: 150px;
   }
 }
+
+.hidden {
+  position: relative;
+}
+
+.hidden .boton-musica {
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  right: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .2rem;
+  gap: .3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+@media (max-width: 768px){
+  .hidden .boton-musica {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+.icono-reproduccion {
+  width: 15px;
+
+}

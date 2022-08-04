@@ -5,7 +5,7 @@ import InformacionBoda from "./InformacionBoda"
 import Novios from "./Novios"
 import styled from 'styled-components'
 import { Howl, Howler } from 'howler'
-import { useEffect } from 'react'
+import { useState } from 'react'
 
 const Titulo = styled.h2`
     font-family: 'Great Vibes', cursive;
@@ -34,6 +34,7 @@ const Titulo = styled.h2`
 `
 
 const ContenidoHome = () => {
+  
     const soundSrc = '/assets/audio/musica_fondo.mp3'
     const callMySound = src => {
       const sound = new Howl({
@@ -49,9 +50,13 @@ const ContenidoHome = () => {
     
     return (
       <div className="hidden">
-        <div onClick={() => callMySound(soundSrc)}>
+          <div className="boton-musica" onClick={() => callMySound(soundSrc)}>
+              Toque aquí
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 icono-reproduccion" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+              </svg>
+          </div>
           <Banner />
-        </div>
         <section className="contenedor" id="novios">
           <FraseYContador />
         </section>
