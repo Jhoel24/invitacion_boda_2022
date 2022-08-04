@@ -519,7 +519,7 @@ img {
 .hidden .boton-musica {
   position: absolute;
   z-index: 1;
-  top: 79rem;
+  top: 72rem;
   right: 4rem;
   display: flex;
   justify-content: center;
@@ -534,7 +534,7 @@ img {
 
 @media (max-width: 768px){
   .hidden .boton-musica {
-    top: 79rem;
+    top: 74rem;
     right: 1rem;
   }
 }
