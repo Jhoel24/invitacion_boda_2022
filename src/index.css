@@ -534,7 +534,7 @@ img {
 
 @media (max-width: 768px){
   .hidden .boton-musica {
-    top: 72rem;
+    top: 70rem;
     right: 1rem;
   }
 }
@@ -542,4 +542,8 @@ img {
 .icono-reproduccion {
   width: 15px;
 
+}
+
+.boton-musica.ocultar{
+  display: none;
 }
