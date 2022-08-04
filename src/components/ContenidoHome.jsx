@@ -34,22 +34,22 @@ const Titulo = styled.h2`
 `
 
 const ContenidoHome = () => {
-    // const soundSrc = '/assets/audio/musica_fondo.mp3'
-    // const callMySound = src => {
-    //   const sound = new Howl({
-    //     src,
-    //     html5: true,
-    //     volume: 0.5,
-    //     autoplay: false
-    //   })
-    //   sound.play()
-    // }
+    const soundSrc = '/assets/audio/musica_fondo.mp3'
+    const callMySound = src => {
+      const sound = new Howl({
+        src,
+        html5: true,
+        volume: 0.5,
+        autoplay: false
+      })
+      sound.play()
+    }
 
     // Howler.volume(0.2)
     
     return (
       <div className="hidden">
-        <div>
+        <div onClick={() => callMySound(soundSrc)}>
           <Banner />
         </div>
         <section className="contenedor" id="novios">

@@ -2,6 +2,7 @@ import styled from "styled-components"
 import CountdownTimer from "./CountdownTimer"
 import { Link } from 'react-router-dom'
 import ScrollDown from "./ScrollDown"
+import { Howl } from "howler"
 
 const ContenidoNavegacion = styled.div`
     position: absolute;
@@ -40,7 +41,7 @@ const Navegacion = styled.nav`
 `
 
 const Banner = () => {
-   
+
     return (
         <div className="contenido-banner">
             <div className="fondo-banner">
