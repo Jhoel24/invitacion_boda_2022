@@ -154,7 +154,7 @@ const InformacionBoda = () => {
                             <div className='contenido-direccion'>
                                 <div className='imagen-waze'>
                                 </div>
-                                <a href='https://www.waze.com/en/live-map/directions/finca-san-nicolas-av.-genova-urb.-cumbres-de-san-francisco,-san-salvador?place=w.177471625.1774585175.21894723'>LLegar a</a>
+                                <a href='https://www.waze.com/en/live-map/directions/finca-san-nicolas-av.-genova-urb.-cumbres-de-san-francisco,-san-salvador?place=w.177471625.1774585175.21894723'>Llegar a</a>
                             </div>
                         </div>
                     </Card>
