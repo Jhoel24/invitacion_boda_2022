@@ -165,7 +165,7 @@ const InformacionBoda = () => {
                         <div className='contenido-texto'>
                             <h3>Ceremonia y recepción</h3>
                             <p>22 de enero, 2023</p>
-                            <p>4:30 pm</p>
+                            <p>4:00 pm</p>
                             <p className='texto-importante'>Finca San Nicolás</p>
                             <div className='contenido-direccion'>
                                 <div className='imagen-waze'>

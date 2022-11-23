@@ -41,7 +41,6 @@ const Navegacion = styled.nav`
 `
 
 const Banner = () => {
-
     return (
         <div className="contenido-banner">
             <div className="fondo-banner">
