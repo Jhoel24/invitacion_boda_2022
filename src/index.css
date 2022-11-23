@@ -519,7 +519,7 @@ img {
 .hidden .boton-musica {
   position: absolute;
   z-index: 1;
-  top: 72rem;
+  top: 80rem;
   right: 4rem;
   display: flex;
   justify-content: center;
@@ -534,7 +534,7 @@ img {
 
 @media (max-width: 768px){
   .hidden .boton-musica {
-    top: 70rem;
+    top: 71.5rem;
     right: 1rem;
   }
 }
@@ -546,4 +546,33 @@ img {
 
 .boton-musica.ocultar{
   display: none;
+}
+
+.close-modal {
+  padding: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.open-modal {
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: goldenrod;
+  background-color: white;
+  border: 1px solid goldenrod;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.open-modal:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+  color: white;
+  transform: scale(1.1);
 }

@@ -120,7 +120,7 @@ const Formulario = () => {
         </Titulo>
         <ContenedorFormulario>
             <div className='formulario-codigo'>
-                { !familia?.nombre && <p className='confirma-asistencia'>Agradeceremos confirmes tu asistencia lo antes posible o hasta el 15 de noviembre</p> }
+                { !familia?.nombre && null }
                 { msgError && <div className='error'>{msgError}</div> }
                 <form
                     onSubmit={handleSubmit}

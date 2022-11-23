@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import borderImage from '../assets/images/borde-titulo.png'
+import ModalComponent from './Modal'
 import NuestraBodaInfo from './NuestraBodaInfo'
 
 const Titulo = styled.h2`
@@ -130,13 +132,27 @@ const Card = styled.div`
 
 const InformacionBoda = () => {
 
+    const [modalIsOpen, setIsOpen] = useState(false)
+
     const arrayInfo = [
         { titulo: 'Código de vestimenta', parrafo: '- Formal', imagen: '/assets/images/traje.png' },
         { titulo: 'Regalos', parrafo: 'Agradeceremos sus muestras de cariño en regalo de sobre', imagen: '/assets/images/regalo.png' },
     ]
 
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
     return (
         <>
+            <ModalComponent 
+                modalIsOpen={modalIsOpen}
+                closeModal={closeModal}  
+            />
             <Titulo>
                 Nuestra boda
                 <img src={'assets/images/colochos.png'} alt="borde" />
@@ -165,6 +181,7 @@ const InformacionBoda = () => {
                         <div className="contenido-texto">
                             <h3>{arrayInfo[0].titulo}</h3>
                             <p>{arrayInfo[0].parrafo}</p>
+                            <button onClick={openModal} className='open-modal' >Ver galería</button>
                         </div>
                     </Card>
                 {/* { arrayInfo.map((info, i) => (

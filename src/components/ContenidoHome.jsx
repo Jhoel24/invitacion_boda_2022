@@ -6,6 +6,7 @@ import Novios from "./Novios"
 import styled from 'styled-components'
 import { Howl, Howler } from 'howler'
 import { useState } from 'react'
+import Carousel from "./Carousel"
 
 const Titulo = styled.h2`
     font-family: 'Great Vibes', cursive;
@@ -42,7 +43,8 @@ const ContenidoHome = () => {
       src: soundSrc,
       html5: true,
       // volume: 0.5,
-      // autoplay: false
+      // autoplay: true,
+      loop: true
     })
     Howler.volume(0.3)
 
