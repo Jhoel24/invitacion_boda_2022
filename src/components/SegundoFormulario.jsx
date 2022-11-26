@@ -52,7 +52,7 @@ const SegundoFormulario = ({familia}) => {
         }
         try {
             setCargando(true)
-            const url = 'https://arcane-inlet-95336.herokuapp.com/api/familia'
+            const url = 'https://backendinvitaciones-production.up.railway.app/api/familia'
             await axios.put(url, { 
                 invitados: Number(invitados),
                 codigo: familia.codigo

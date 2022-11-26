@@ -97,7 +97,7 @@ const Formulario = () => {
         e.preventDefault()
        try {
            setCargando(true)
-           const url = 'https://arcane-inlet-95336.herokuapp.com/api/familia/buscar'
+           const url = 'https://backendinvitaciones-production.up.railway.app/api/familia/buscar'
            const { data } = await axios.post(url, { codigo })
            setCargando(false)
            setFamilia(data)
